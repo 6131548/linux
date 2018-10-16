@@ -1,0 +1,4 @@
+测试：vim /usr/local/apache/htdocs/index.php
+/usr/local/mysql/bin/mysql -u root -p //设置
+systemctl stop firewalld.service  //关闭防火墙
+chmod 777 filename 给权限
