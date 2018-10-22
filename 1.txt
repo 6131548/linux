@@ -3,3 +3,4 @@
 systemctl stop firewalld.service  //关闭防火墙
 chmod 777 filename 给权限
 https://blog.csdn.net/Drug_/article/details/79697212
+https://blog.csdn.net/Drug_/article/details/79697212
