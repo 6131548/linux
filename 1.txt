@@ -4,3 +4,11 @@ systemctl stop firewalld.service  //关闭防火墙
 chmod 777 filename 给权限
 https://blog.csdn.net/Drug_/article/details/79697212
 https://blog.csdn.net/Drug_/article/details/79697212
+MYSQL处理
+[root@bogon desktop]# /usr/bin/mysqladmin -u root password 'passok'
+
+mysql>GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY 'youpassword' WITH GRANT OPTION;
+重载授权表：
+FLUSH PRIVILEGES;
+退出mysql数据库：
+exit
