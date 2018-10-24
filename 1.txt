@@ -27,3 +27,5 @@ vim /etc/sysconfig/iptables
 -A INPUT -m state --state NEW -m tcp -p tcp --dport 3306 -j ACCEPT
 重启防火墙：
 service iptables restart
+service mysqld start 开启数据库服务
+
