@@ -30,3 +30,6 @@ service iptables restart
 service httpd restart 重启APACHE
 service mysqld start 开启数据库服务
 
+netstat -anp | grep 29502 查看被占用端口
+ kill -s 9 17293 杀死进程
+ nohup php server.php >> ./server.log 2>&1 & 后台启用并写入日志
