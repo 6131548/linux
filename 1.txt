@@ -1,6 +1,8 @@
 测试：vim /usr/local/apache/htdocs/index.php
 /usr/local/mysql/bin/mysql -u root -p //设置
 systemctl stop firewalld.service  //关闭防火墙
+service iptables start //开启内置防火墙
+service iptables stop //关闭内置防火墙
 chmod 777 filename 给权限
 https://blog.csdn.net/Drug_/article/details/79697212
 https://blog.csdn.net/Drug_/article/details/79697212
@@ -13,6 +15,16 @@ FLUSH PRIVILEGES;
 退出mysql数据库：
 exit
 
+《——————————MYSQ忘记密码修改——————————————》
+# /etc/init.d/mysql stop
+# mysqld_safe --user=mysql --skip-grant-tables --skip-networking &
+# mysql -u root
+mysql> use mysql;
+mysql> update user set password=password("newpassword") where user='root';
+mysql> flush privileges;
+mysql> quit
+《——————————end———————————————》
+《——————————  mysql8.0  ———————————————》
 mysql 8.0 
 
 drop user 'username'@'host'; //删除用户
@@ -29,7 +41,7 @@ vim /etc/sysconfig/iptables
 service iptables restart
 service httpd restart 重启APACHE
 service mysqld start 开启数据库服务
-
+《——————————    mysql8.0 end                ———————————————》
 netstat -anp | grep 29502 查看被占用端口
  kill -s 9 17293 杀死进程
  nohup php server.php >> ./server.log 2>&1 & 后台启用并写入日志
