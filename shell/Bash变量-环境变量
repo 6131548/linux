@@ -1,0 +1,6 @@
+申请变量
+export 变量名=变量值
+
+env 查询变量、
+unset 删除变量
+pstree 确定进程数
