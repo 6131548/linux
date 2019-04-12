@@ -1,0 +1,14 @@
+#bin/bsah
+num1 = $1
+num2 = $2
+sum =$(($num1+$num2))
+echo $sum
+$* 便是所有参数
+$@吧每个参数区别对待
+$#所有参数的个数
+
+for 循环
+for i in "$*"
+  do 
+    echo "this id $i"
+  done  
