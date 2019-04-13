@@ -1,0 +1,9 @@
+/etc/profile
+USRR变量
+LOGNAME变量
+MAIL变量
+PATH变量
+HOSTNAME变量
+HISTSIZE变量
+umask:
+调用/etc/profile.d/*.sh文件
