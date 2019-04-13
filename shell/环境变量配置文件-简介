@@ -1,0 +1,8 @@
+source 配置文件
+或者. 配置文件
+PTH,HISTSIZE,PSI,HOSTNAME
+/etc/profile
+/etc/profile.d/*.sh
+~/.bash_profile
+~/.bashrc
+/etc/bashrc
