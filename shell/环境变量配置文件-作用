@@ -7,3 +7,23 @@ HOSTNAME变量
 HISTSIZE变量
 umask:
 调用/etc/profile.d/*.sh文件
+1.注销时生效的环境变量配置文件
+~/.bash_logut
+2其他配置文件
+~/bash_history
+3shell 登录信息
+/etc/issue
+​\d 本地端时间的日期
+​\l 显示第几个终端机的接口
+​\n 显示主机的网络名称
+​\o 显示 domain name
+​\r 操作系统的版本 (类似 uname-r)
+​\t 显示本地端时间的时间
+​\s 操作系统的名称
+​\v 操作系统的版本
+\r详细的内核版本
+​\m给出当前操作系统的位数
+
+远程登录终端欢迎信息:/etc/issue.net
+本地和远程登录欢迎信息：/etc/motd
+
