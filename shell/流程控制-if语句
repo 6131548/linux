@@ -1,0 +1,11 @@
+if 语句
+单分支if条件语句
+if[条件判断];then
+程序
+fi
+if [条件判断]
+  then
+    程序
+fi  
+
+size=$(du -sh /usr/local/mysql) //数据库大小
