@@ -1,0 +1,21 @@
+for 变量 in 值1值2值3.。。
+  do
+    程序
+  done  
+  
+  如
+  #!/bin/bash
+for i in 1 2 1  2 2 2 2 
+	do 
+		echo "这是$i"
+	done	
+  
+  2
+  #!/bin/bash
+ls *.sh >> log.txt
+for i in $(cat log.txt)
+	do
+		echo $i
+	done	
+  
+  
