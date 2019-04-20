@@ -7,5 +7,17 @@ if [条件判断]
   then
     程序
 fi  
-
+//注意if 后面要跟空格
 size=$(du -sh /usr/local/mysql) //数据库大小
+查看apacha是否启动
+port=$(nmap -sT 192.168.1.56 |grep tcp |grep http| awk'{print $2}')
+if [ "$port"=="open" ]
+  then
+    echo "$(date) httpd is OK" >>/tmp/autostaat-acc.log
+else
+  /etc/rc.d/init.d/http start & >/dec/null
+  echo "$(date) is restart" >>/tmp/autostaat-acc.log
+  if
+ //nmap 扫描服务 //黑客帝国
+ exit 2 跳出程序
+ 
