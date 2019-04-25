@@ -1,0 +1,13 @@
+Congratulations, Shadowsocks-Python server install completed!
+Your Server IP        :  47.106.128.153 
+Your Server Port      :  10888 
+Your Password         :  123456 
+Your Encryption Method:  aes-256-gcm 
+
+Your QR Code: (For Shadowsocks Windows, OSX, Android and iOS clients)
+ ss://YWVzLTI1Ni1nY206MTIzNDU2QDQ3LjEwNi4xMjguMTUzOjEwODg4 
+Your QR Code has been saved as a PNG file path:
+ /lamp/shadowsocks_python_qr.png 
+
+Welcome to visit: https://teddysun.com/486.html
+Enjoy it!
