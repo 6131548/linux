@@ -45,3 +45,13 @@ service mysqld start 开启数据库服务
 netstat -anp | grep 29502 查看被占用端口
  kill -s 9 17293 杀死进程
  nohup php server.php >> ./server.log 2>&1 & 后台启用并写入日志
+ 
+ 重启NGINX 
+ nginx -s reload /start/stop
+ ./nginx -c ../etc/nginx.conf
+重启PHP-FPM
+1 service php-fpm restart
+2 killall php-fpm 
+/usr/local/php/sbin/php-fpm &
+重启防火墙
+iptables-restore < /path-to-rules-file
