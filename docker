@@ -48,4 +48,6 @@ docker exec -it 243c32535da7 /bin/bash
   sudo docker inspect -f {{.State.Pid}} 44fc0f0582d9  
   2253
   sudo nsenter --target 2253 --mount --uts --ipc --net --pid  
+//删除镜像
+docker rmi 镜像id
  
