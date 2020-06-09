@@ -1,0 +1,8 @@
+vi /etc/yum/pluginconf.d/fastestmirror.conf
+第2行改为：    enabled=0   //由 1 改成0 ，禁用该插件
+vi /etc/yum.conf
+第9行改为：    plugins=0  //不使用插件
+yum clean all
+yum makecache
+
+然后重启网络 service network restart
