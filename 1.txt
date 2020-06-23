@@ -59,3 +59,9 @@ netstat -anp | grep 29502 查看被占用端口
 iptables-restore < /path-to-rules-file
 
 重启网络  service network restart
+
+mysql 报错
+cd  /etc 目录下的my.cnf文件（可以 whereis my.cnf)
+修改my.cnf文件，在[mysqld]中添加
+sql-mode=ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION
+重启数据库 service mysql restart
