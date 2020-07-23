@@ -51,3 +51,5 @@ docker exec -it 243c32535da7 /bin/bash
 //删除镜像
 docker rmi 镜像id
  
+容器保存 docker commit -m '备注' 容器id 新的image名称
+docker commit -m '备注' dssgshshs new-ngixn
