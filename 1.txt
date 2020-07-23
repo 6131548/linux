@@ -51,6 +51,9 @@ netstat -anp | grep 29502 查看被占用端口
  重启NGINX 
  nginx -s reload /start/stop
  ./nginx -c ../etc/nginx.conf
+  nginx  -c /usr/local/nginx/conf/nginx.conf
+  systemctl restart nginx.service
+  
 重启PHP-FPM
 1 service php-fpm restart
 2 killall php-fpm 
