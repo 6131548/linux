@@ -60,3 +60,22 @@ dockerfile
 FROM alpine:latest
 MAINTAINER xbf 
 CMD echo "hello"
+创建命令 docker build -t hello_docker 
+
+DOCKERFLE2
+[root@VM_0_13_centos docker]# rm -rf Dockerfile 
+FROM ubuntu
+MAINTAINER xbf
+RUN apt-get update
+RUN apt-get install -y nginx
+COPY index.html /var/www/html
+ENTRYPOINT ["usr/sbin/nginx","-g","daemon off;"]
+EXPOSE 80
+
+dockerfile 语法1
+FROM baseimage
+RUN 执行命令
+ADD 添加文件
+COPY 拷贝文件
+CMD 执行命令
+EXPOSE  暴露端口
