@@ -54,5 +54,9 @@ docker rmi 镜像id
 容器保存 docker commit -m '备注' 容器id 新的image名称
 docker commit -m '备注' dssgshshs new-ngixn
 拷贝文件进docker
-cp filename  容器id://路径 
-例如 cp index.html 022y373cc://data/wwwroot/
+docker cp filename  容器id://路径 
+例如docker cp index.html 022y373cc://data/wwwroot/
+dockerfile
+FROM alpine:latest
+MAINTAINER xbf 
+CMD echo "hello"
