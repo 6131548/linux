@@ -23,6 +23,8 @@ docker stop 2b1b7a428627  //停止
 docker stop amazing_cori  //停止
 进入docker
 docker exec -it 243c32535da7 /bin/bash
+退出容器
+ctrcl+d
 导出
  docker export 1e560fca3906 > ubuntu.tar
  导入 
@@ -87,3 +89,11 @@ ENTERPOINT 容器入口
 USER 指定用户
 VOLUME mount point
 
+volume 
+docker run -d -v /usr/share/nginx/html nginx 
+
+查看运行中的信息
+docker inspect 容器名称    
+
+查看镜像的Config信息
+docker inspect -f {{".Config"}} 容器名称
