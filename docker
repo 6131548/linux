@@ -79,3 +79,11 @@ ADD 添加文件
 COPY 拷贝文件
 CMD 执行命令
 EXPOSE  暴露端口
+
+WORKDIR  指定目录
+MAINTAINER 维护者
+ENV 设定环境变量
+ENTERPOINT 容器入口
+USER 指定用户
+VOLUME mount point
+
